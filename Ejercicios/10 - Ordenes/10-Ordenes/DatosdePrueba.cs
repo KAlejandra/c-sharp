@@ -21,6 +21,7 @@ public class DatosdePrueba
         ListaOrdenes = new List<Orden>();
     }
 
+
     private void cargarProductos()
     {
         Producto p1 = new Producto(1, "Mouse", 250);
@@ -157,6 +158,8 @@ public class DatosdePrueba
         }
 
         Console.WriteLine("");
+        Console.WriteLine("Subtotal de la orden es de: " + nuevaOrden.Subtotal);
+        Console.WriteLine("Impuesto S/V es de: " + nuevaOrden.Impuesto);
         Console.WriteLine("Total de la orden es de: " + nuevaOrden.Total);
         Console.ReadLine();
     }
