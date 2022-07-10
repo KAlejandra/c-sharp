@@ -41,6 +41,9 @@ public class DatosdePrueba
 
         Cliente c2 = new Cliente(2, "Pedro", "99999");
         ListadeClientes.Add(c2);
+
+        Cliente c3 = new Cliente(3, "Karol", "11111");
+        ListadeClientes.Add(c3);
     }
 
     private void cargarVendedores()
