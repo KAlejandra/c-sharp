@@ -2,6 +2,7 @@ using System;
 public class Perro: Mamifero // <- Herencia
 {
     public bool EsDomestico { get; set; }
+    public bool Comer { get; set; }
 
     public Perro() // <- Polimorfismo
     {
@@ -31,6 +32,6 @@ public class Perro: Mamifero // <- Herencia
 
     private void OtroMetodo() // <- Encapsulamiento
     {
-
+        Comer = true;
     }
 }
