@@ -2,16 +2,11 @@ using System;
 public class PezPayaso: Aves // <- Herencia
 
 {
-    public bool NoEsDomestico { get; set; }
+    public bool EsDomestico { get; set; }
 
     public PezPayaso() // <- Polimorfismo
     {
         EsDomestico = false;
-    }
-
-    public PezPayaso(bool NoesDomestico) // <- Polimorfismo
-    {
-        NoEsDomestico = noesDomestico;
     }
 
     public void Nadar() // <- Abstraccion
