@@ -2,16 +2,12 @@ using System;
 public class mono: Mamifero // <- Herencia
 
 {
-    public bool NoEsDomestico { get; set; }
+    public bool EsDomestico { get; set; }
+    public bool Comer{ get; set; }
 
     public mono() // <- Polimorfismo
     {
         EsDomestico = false;
-    }
-
-    public mono(bool NoesDomestico) // <- Polimorfismo
-    {
-        NoEsDomestico = noesDomestico;
     }
 
     public void Maullar() // <- Abstraccion
@@ -32,6 +28,6 @@ public class mono: Mamifero // <- Herencia
 
     private void OtroMetodo() // <- Encapsulamiento
     {
-
+        Comer = true;
     }
 }
