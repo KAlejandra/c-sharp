@@ -1,32 +1,51 @@
 using System;
-public class gato: Mamifero // <- Herencia
+public class Gato: Mamifero // <- Herencia
 {
     public bool EsDomestico { get; set; }
-    public string Pelaje { get; set; }
 
-    public gato() // <- Polimorfismo
+    private bool pelaje;
+    private bool Comer;
+
+
+    public bool GetPelaje()
     {
-        EsDomestico = true;
+        return pelaje;
     }
 
-    public gato(bool esDomestico) // <- Polimorfismo
+    public void SetPelaje(bool value)
     {
-        EsDomestico = esDomestico;
+        pelaje = value;
+    }
+
+    public new bool Comer { get; set; }
+    public new bool Caminar { get; set; }
+
+    public Gato() // <- Polimorfismo
+    {
+        EsDomestico = true;
+        Comer = true;
+        Caminar = true;
     }
 
     public void Maullar() // <- Abstraccion
     {
-        Console.WriteLine("Miau miau miau");
+        Console.WriteLine("Miau miau miau ");
     }
-    
+
     public void Tamano()
     {
         DescribirTamano();
+        OtroMetodo();
     }
 
     private void DescribirTamano() // <- Encapsulamiento
     {
-        Console.WriteLine("A small cat");
+        Console.WriteLine("Es un gato pequeno");
     }
 
+    private void OtroMetodo() // <- Encapsulamiento
+    {
+        SetPelaje(true);
+        Comer = true;
+    }
 }
