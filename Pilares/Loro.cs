@@ -2,16 +2,12 @@ using System;
 public class Loro: Aves // <- Herencia
 
 {
-    public bool NoEsDomestico { get; set; }
+    public bool EsDomestico { get; set; }
+    public new bool Comer { get; set; }
 
     public Loro() // <- Polimorfismo
     {
-        EsDomestico = false;
-    }
-
-    public Loro(bool NoesDomestico) // <- Polimorfismo
-    {
-        NoEsDomestico = noesDomestico;
+        EsDomestico = true;
     }
 
     public void Hablar() // <- Abstraccion
@@ -32,6 +28,6 @@ public class Loro: Aves // <- Herencia
 
     private void OtroMetodo() // <- Encapsulamiento
     {
-
+        Comer = true;
     }
 }
