@@ -2,17 +2,14 @@ using System;
 public class Aguila: Aves // <- Herencia
 
 {
-    public bool NoEsDomestico { get; set; }
+    public bool EsDomestico { get; set; 
+    public bool Comer { get; set; }
 
     public Aguila() // <- Polimorfismo
     {
         EsDomestico = false;
     }
 
-    public Aguila(bool NoesDomestico) // <- Polimorfismo
-    {
-        NoEsDomestico = noesDomestico;
-    }
 
     public void VolarAlto() // <- Abstraccion
     {
@@ -32,6 +29,6 @@ public class Aguila: Aves // <- Herencia
 
     private void OtroMetodo() // <- Encapsulamiento
     {
-
+        Comer = true;
     }
 }
